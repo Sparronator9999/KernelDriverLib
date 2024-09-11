@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+        <AnalysisLevel>latest-recommended</AnalysisLevel>
+        <AssemblyTitle>Windows kernel driver access library</AssemblyTitle>
+        <AssemblyVersion>0.6.9.420</AssemblyVersion>
+        <Authors>Sparronator9999</Authors>
+        <Copyright>Copyright © 2023-2024 Sparronator9999</Copyright>
+        <EnableNETAnalyzers>True</EnableNETAnalyzers>
+        <FileVersion>0.6.9.420</FileVersion>
+        <LangVersion>latest</LangVersion>
+        <OutputType>Library</OutputType>
+        <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+        <TargetFramework>net48</TargetFramework>
+        <Title>KernelDriverLib</Title>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+        <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    </ItemGroup>
+</Project>
