@@ -1,5 +1,8 @@
 # KernelDriverLib - C# Kernel Driver Library
 
+> [!IMPORTANT]
+> Due to lack of time to work on this project, as well as lack of popularity, this project has been archived as of Oct 3, 2025. It is not planned to be moved to [my Codeberg account](https://codeberg.org/Sparronator9999) along with my other projects at the time of writing. You may find more up-to-date code in two of my main projects, [YAMDCC](https://codeberg.org/Sparronator9999/YAMDCC) and [OpenBootCamp](https://codeberg.org/Sparronator9999/OpenBootCamp), which the code for this project was based on.
+
 A C# (.NET) library for installing and accessing Windows kernel drivers.
 
 ## Disclaimers
@@ -22,7 +25,7 @@ This library may be useful for interoping with [WinRing0](https://github.com/Ger
 
 ## Usage notes
 
-This library's `Driver` class is designed to be extended by adding driver-specific IOCTLS to a subclass. For example:
+This library's `Driver` class is designed to be extended by adding driver-specific IOCTLs to a subclass. For example:
 
 ```cs
 public class Ring0Driver : Driver
@@ -57,16 +60,6 @@ public enum Ring0IOCTL : uint
 ```
 
 Struct support hasn't been well tested, but should work if the `[StructLayout(LayoutKind.Sequential, Pack = 1)]` attribute is added to structs to be passed to the driver.
-
-## Download
-
-Development builds are available through [GitHub Actions](https://github.com/Sparronator9999/KernelDriverLib/actions).
-
-Alternatively, if you don't have a GitHub account, you can download the latest build from [nightly.link](https://nightly.link/Sparronator9999/KernelDriverLib/workflows/build/main?preview).
-
-(You probably want the `Release` build, unless you're debugging issues with the program)
-
-Alternatively, you can [build the program yourself](#build).
 
 ## Build
 
